@@ -2,9 +2,10 @@ import spotipy
 import sys
 import argparse
 import pprint
+import os
 from spotipy.oauth2 import SpotifyOAuth
 
-spotify_username = "SPOTIFY_USERNAME"
+spotify_username = os.environ['SPOTIFY_USER_NAME']
 TRACKS_PER_RELATED_ARTIST = 2
 
 spotify_client = None
